@@ -1,4 +1,4 @@
-...from Live import load_game, welcome....
+from Live import load_game, welcome
 
 # print(welcome())
 user_name = welcome()
