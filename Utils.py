@@ -9,8 +9,10 @@ LAST_SCORES = 'last_scores.txt'
 def Screen_cleaner():
 
      time.sleep(0.7)
-     os.system('cls')
-
+     if (os.name == 'posix'):
+        os.system('clear')
+     else:
+        os.system('cls')
 
 
 def transfer_and_clear_file(src_file, cp_file):
