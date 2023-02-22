@@ -1,4 +1,4 @@
-from Utils import transfer_and_clear_file, SCORES_FILE_NAME
+from Utils import transfer_and_clear_file, SCORES_FILE_NAME, Screen_cleaner
 
 
 def welcome():
@@ -127,14 +127,14 @@ def load_game(user_name):
                 repeat = input("""Do you want to PLAY AGAIN the SAME GAME with the SAME DIFFICULTY, 
                 OR you want to PLAY ANOTHER GAME?
 
-                                To CONTINUE PLAYING the SAME GAME     
-                          with the SAME DIFFICULTY please type in >>>:   Y.
-                                                                  =========      
-                                To Choose ANOTHER GAME please type in:   N.  
-                                                              =============
-                                If you want to EXIT please type in:      Q. 
-                                                           ================                  
-                >>> YOUR ANSWER HERE >>>:  """)
+                        To CONTINUE PLAYING the SAME GAME     
+                  with the SAME DIFFICULTY please type in >>>:   Y.
+                                                          =========      
+                        To Choose ANOTHER GAME please type in:   N.  
+                                                      =============
+                        If you want to EXIT please type in:      Q. 
+                                                   ================                  
+                        >>> YOUR ANSWER HERE >>>:  """)
 
                 print('\n')
 
@@ -163,14 +163,14 @@ def load_game(user_name):
                 repeat = input("""Do you want to PLAY AGAIN the SAME GAME with the SAME DIFFICULTY, 
                                 OR you want to PLAY ANOTHER GAME?
 
-                                                To CONTINUE PLAYING the SAME GAME     
-                                          with the SAME DIFFICULTY please type in >>>:   Y.
-                                                                                  =========      
-                                                To Choose ANOTHER GAME please type in:   N.  
-                                                                              =============
-                                                If you want to EXIT please type in:      Q. 
-                                                                           ================                  
-                                >>> YOUR ANSWER HERE >>>:  """)
+                        To CONTINUE PLAYING the SAME GAME     
+                  with the SAME DIFFICULTY please type in >>>:   Y.
+                                                          =========      
+                        To Choose ANOTHER GAME please type in:   N.  
+                                                      =============
+                        If you want to EXIT please type in:      Q. 
+                                                   ================                  
+                            >>> YOUR ANSWER HERE >>>:  """)
 
                 print('\n')
 
@@ -178,6 +178,7 @@ def load_game(user_name):
                     game = play(lvl_sel)
                     if game:
                         add_score(lvl_sel)
+
                 elif repeat.startswith('N') or repeat.startswith('n'):
                     break
                 elif repeat.startswith('Q') or repeat.startswith('q'):
@@ -199,13 +200,13 @@ def load_game(user_name):
                 repeat = input("""Do you want to PLAY AGAIN the SAME GAME with the SAME DIFFICULTY, 
                                  OR you want to PLAY ANOTHER GAME?
 
-                                                To CONTINUE PLAYING the SAME GAME     
-                                          with the SAME DIFFICULTY please type in >>>:   Y.
-                                                                                  =========      
-                                                To Choose ANOTHER GAME please type in:   N.  
-                                                                              =============
-                                                If you want to EXIT please type in:      Q. 
-                                                                           ================                  
+                            To CONTINUE PLAYING the SAME GAME     
+                      with the SAME DIFFICULTY please type in >>>:   Y.
+                                                              =========      
+                            To Choose ANOTHER GAME please type in:   N.  
+                                                          =============
+                            If you want to EXIT please type in:      Q. 
+                                                       ================                  
                                  >>> YOUR ANSWER HERE >>>:  """)
 
                 print('\n')

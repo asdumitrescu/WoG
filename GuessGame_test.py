@@ -1,6 +1,6 @@
 import random
 from Score import add_score
-
+from Utils import Screen_cleaner
 def generate_number(lvl_sel):
 
     secret_number = random.randint(1, lvl_sel)
@@ -34,9 +34,11 @@ def play(lvl_sel):
     result = compare_results(number, secret_number)
 
     if result:
-        print("CONGRATULATIONS !!! Your TOTAL SCORE is: {}".format(add_score(lvl_sel)))
+        Screen_cleaner()
+        print("CONGRATULATIONS !!!")
         return True
     else:
+        Screen_cleaner()
         print("BETTER LUCK NEXT TIME !!!")
         print(f'The number was: {secret_number}')
         print('\n')

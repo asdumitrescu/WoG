@@ -34,8 +34,10 @@ def play(lvl_sel):
 
     result = is_list_equal(secret_sequence, get_list_from_user(lvl_sel))
     if result:
-        print("CONGRATULATIONS !!! Your TOTAL SCORE is: {}".format(add_score(lvl_sel)))
+        Screen_cleaner()
+        print("CONGRATULATIONS !!!")
         return True
     else:
+        Screen_cleaner()
         print("BETTER LUCK NEXT TIME !!! The numbers were {} \n".format(secret_sequence))
         return False

@@ -7,11 +7,10 @@ LAST_SCORES = 'last_scores.txt'
 
 
 def Screen_cleaner():
-
-     time.sleep(0.7)
-     if (os.name == 'posix'):
+    time.sleep(0.7)
+    if (os.name == 'posix'):
         os.system('clear')
-     else:
+    else:
         os.system('cls')
 
 

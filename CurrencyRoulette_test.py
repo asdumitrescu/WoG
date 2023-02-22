@@ -1,6 +1,6 @@
 from currency_converter import CurrencyConverter
 import random
-from Score import add_score
+from Utils import Screen_cleaner
 
 def get_money_interval(lvl_sel):
 
@@ -35,10 +35,10 @@ def play(lvl_sel):
     money_from_user = float(get_guess_from_user())
 
     if random_money[0] <= money_from_user <= random_money[1]:
-        print("CONGRATULATIONS !!! YOUR TOTAL POINTS ARE {} !!!".format(add_score(lvl_sel)))
+        Screen_cleaner()
         return True
     else:
-
+        Screen_cleaner()
         print("BETTER LUCK NEXT TIME !!!")
         print('The interval was {}\n'.format(random_money))
         return False
